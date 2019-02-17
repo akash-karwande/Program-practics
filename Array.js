@@ -65,3 +65,21 @@ function minMax(arr){
   console.log(b);
 }
 minMax([3,5,65,3,2,88,98,1])
+
+//Bubble sort Algorithm
+
+function bubble(arr) {
+  for ( var i =arr.length; i>0; i-- ){
+    for ( var j=0; j<i; j++ ){
+      if( arr[j] > arr[j+1] ){
+        var temp = arr[j];
+        arr[j] = arr[j+1];
+        arr[j+1] = temp;
+        
+      }
+    }
+  }
+  return arr;
+}
+
+console.log(bubble([22,2,44,55,66,1,3,33]))
