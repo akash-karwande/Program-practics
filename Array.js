@@ -83,3 +83,18 @@ function bubble(arr) {
 }
 
 console.log(bubble([22,2,44,55,66,1,3,33]))
+
+// Reverse array
+
+function reverseAarray(arr) {
+  for (var i = 0; i<arr.length/2; i++) {
+    var temp = arr[i];
+    arr[i] = arr[arr.length -1 -i];
+    arr[arr.length -1 -i] = temp;
+    
+  }
+  return arr;
+}
+
+console.log(reverseAarray([1,2,3,4,5,6]))
+
