@@ -1,4 +1,7 @@
 var date = new Date();
 Date.parse(date);
-var day = date.getDate();
+console.log(date.toISOString());
+var day = date.getDay();
+var year = date.getFullYear();
 console.log(day);
+console.log(year);

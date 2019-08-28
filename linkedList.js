@@ -14,7 +14,7 @@ class SinglyLinkedList {
 
     push(name) {
         var newNode = new Node(name);
-        if(!this.head) {
+        if (!this.head) {
             this.head = newNode;
             this.tail = this.head;
         } else {
